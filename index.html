@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheryl's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="files-container">
+
+     <div class="bottom-bar">
+          <p>.</p>
+     </div>
+     <!-- BUTTONS -->
+
+          <div class="files"> 
+               <button class="files-btn"> 
+                    <img src="icons/contact.png"> 
+               </button> 
+               <h3 class="files-label">contact me</h3> 
+          </div> 
+               
+          <div class="files"> 
+               <button class="files-btn" onclick="openEdu()"> 
+                    <img src="icons/education.png"> 
+               </button> 
+          <h3 class="files-label">education</h3> 
+          </div> 
+
+          <div class="files"> 
+               <button class="files-btn" onclick="openProj()"> 
+                    <img src="icons/projects.png"> 
+               </button> 
+          <h3 class="files-label">projects</h3> 
+          </div>
+
+          <div class="files"> 
+               <button class="files-btn" onclick="openExp()"> 
+                    <img src="icons/experience.png"> 
+               </button> 
+               <h3 class="files-label">experience</h3> 
+          </div> 
+
+          <div class="files"> 
+               <button class="files-btn" onclick="openCertif()"> 
+                    <img src="icons/certifications.png"> 
+               </button> 
+          <h3 class="files-label">certificates</h3> 
+          </div> 
+
+          <div class="files"> 
+               <button class="files-btn" onclick="openGames()"> 
+                    <img src="icons/games.png"> 
+               </button> 
+          <h3 class="files-label">games</h3> 
+          </div> 
+
+          <!-- POPUPS -->
+          <div class="education-popup" id="edu"> 
+               <h3 class="education-info"> John P. Stevens High School (2020 - 2024)
+                    <br><br> Rutgers University, New Brunswick (September 2024 - May 2028)</h3> 
+               <button class="edu-exit-btn" onclick="closeEdu()"> 
+                    <img src="icons/close.png" class="exit-img">
+               </button> 
+          </div> 
+          
+          <div class="projects-popup" id="proj">
+               <h3 class="projects-info"> Quiz-game (JavaScript, HTML/CSS)
+                    <br><br> Digital journal (Python) 
+                    <br><br> Personal Portfolio Website (JavaScript, HTML/CSS) </h3>
+               <button class="proj-exit-btn" onclick="closeProj()"> 
+                    <img src="icons/close.png" class="exit-square-img">
+               </button> 
+          </div> 
+            
+
+          <div class="experience-popup" id="exp">
+               <h4 class= "experience-info"> Margin5Solutions Inc. <br><br>
+                    <ul>
+                         <li>Managed website and website pages for Margin5 Solutions, Inc </li>
+                         <li>Created new web pages with HTML/CSS and JavaScript, modified existing pages</li>
+                         <li>Managed website code and took regular backups</li>
+                         <li>Organized and maintained office records and digital files to ensure efficient data management</li>
+                         <li>Scanned, categorized, and tracked documents to support daily business operations</li>
+                     </ul>
+               </h4>
+               <button class="exp-exit-btn" onclick="closeExp()"> 
+                    <img src="icons/exit-btn.png" class="exp-exit-img">
+               </button> 
+          </div>
+          
+          <div class="certificates-popup" id="certif"> 
+               <h3 class="certificates-info"> Inside LVMH Certificate    December 2024 
+                    <li>Creation & Branding + Operations & Supply Chain </li> 
+               </h3> 
+               <button class="certif-exit-btn" onclick="closeCertif()"> 
+                    <img src="icons/close.png" class="certif-exit-img"> 
+               </button> 
+          </div> 
+
+          <div class="games-popup" id="games">  
+               <button class="games-exit-btn" onclick="closeGames()"> 
+                    <img src="icons/exit-btn.png" class="games-exit-img"> 
+               </button> 
+               <h3 class="games-info">Select a Game</h3>
+               <button class="play-game-btn" onclick="window.open('quiz-game/index.html', '_blank')">
+                    🎮 Play Quiz Game
+               </button>
+          </div> 
+     </main> 
+     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+     <script src="script.js"></script> 
+</body> 
+</html>
