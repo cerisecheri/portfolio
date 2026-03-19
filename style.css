@@ -39,12 +39,23 @@ body{
 
 /*FILES */
 .files-container{
+    /*
     display: flex;
     flex-direction: column;
-    gap: 35px; /*changed from 50*/
+    gap: 35px; 
     width: 100px;
     height: 770px;
-    padding: 20px 300px 50px 20px;   
+    padding: 20px 300px 50px 20px; 
+    */
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    justify-content: start;
+    column-gap: 35px;
+    row-gap: 30px;
+    padding: 10px; 
+
 }
 .files{
     border-radius: 12px;
@@ -67,7 +78,7 @@ body{
     width: 80px;
 }
 .files-label{
-    padding-left: 8px;
+    text-align: center;
 }
 /* END FILES */
 
@@ -76,7 +87,7 @@ body{
     background-image: url('icons/edu-popup.png');
     background-position: center;
     background-size: cover;
-    width: 300px;
+    width: 290px;
     height: 230px;
     position: absolute;
     left: 0%;
@@ -110,8 +121,8 @@ body{
     height: 17px;
     width: 17px; 
     position: absolute;
-    left: 91.5%;
-    top: 3px;
+    left: 92%;
+    top: 4.7px;
 }
 .exit-img{
     height: 17px;
@@ -189,7 +200,7 @@ body{
 }
 .open-certif{
     visibility: visible;
-    top: 5%;
+    top: 58%;
     left: 61%;
    transform: scale(1); 
 }
@@ -239,7 +250,7 @@ body{
 }
 .open-exp{
     visibility: visible;
-    top: 5%;
+    top: 15%;
     left: 61%;
     transform: scale(1);
 }
